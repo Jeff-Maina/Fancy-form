@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; 
+}
+
+section{
+    background: rgb(154,119,196);
+    background: linear-gradient(90deg, rgba(154,119,196,1) 8%, rgba(71,31,115,1) 100%);    height: 100vh;
+    width: 100%;
+    /* height: 100%; */
+    box-sizing: border-box;
+    padding-top: 10em;
+}
+
+#form{
+    position: relative;
+    height: 40%;
+    width: 60%;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+#instructions{
+    z-index: 100;
+    box-sizing:border-box;
+    height: 55%;
+    width: 100%;
+    background-color: bisque;
+    padding: 2em;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+
+#instruction{
+margin: 0;
+font-size: 1.5em;
+color: rgb(10, 15, 47);
+}
+
+#second-instruction{
+    color: grey;
+    margin: 1em 0em ;
+    font-size: .8em;
+}
+
+#inputs{
+    position: relative;
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(154,119,196);
+    background: linear-gradient(90deg, rgba(154,119,196,1) 8%, rgba(71,31,115,1) 100%);    height: 100vh;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.input{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+#name{
+    height: 100%;
+    width: 100%;
+    top:0px;
+    background-color: #AAE3E2;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transition: .5s;
+}
+
+#email{
+    height: 100%;
+    width: 98%;
+    top: 10px;
+    background-color: #FCBAD3;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin: auto;
+    transition: .5s;
+}
+
+#password{
+    height: 100%;
+    width: 96%;
+    top:20px;
+    background-color: #FADA9D;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transition: .5s;
+}
+
+#password-repeat{
+    height: 100%;
+    width: 94%;
+    top: 30px;
+    background-color: #FFFFD2;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transition: .5s;
+}
+
+#welcome-message {
+    background-color: #AAC4FF;
+    height: 100%;
+    width: 92%;
+    top: 40px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transition: .5s;
+    display: flex;
+    text-align: center;
+}
+
+#welcome-message i{
+  margin:auto !important;
+  color: #6f4db9;
+  font-size: 2em;
+}
+
+#welcome-message h4{
+    margin:auto !important;
+    color: #6f4db9;
+    font-size: 2em;
+  }
+  
+
+
+
+input{
+    border: none;
+    margin: auto;
+    background-color: transparent;
+    width: 80%;
+    font-size: 2em;
+    color: #A084DC;
+    font-weight: 800;
+    padding-left: 2em;
+}
+
+input::placeholder{
+    font-size: .8em;
+    font-weight: 600;
+    color:#A084DC;
+}
+
+input:focus{
+    outline: none;
+}
+
+#button{
+    height: 100%;
+    width: 20%;
+    border-bottom-right-radius: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.name-btn{
+    background-color: #BFACE2;
+}
+
+.email-btn{
+    background-color: #ad98d4;
+}
+
+.pass-btn{
+    background-color: #BFACE2;
+}
+
+.passwordrepeat-btn{
+    background-color: #ad98d4;
+}
+
+.welcome-btn{
+    background-color: #BFACE2;
+    width: 19% !important;
+}
+
+
+.material-icons{
+    cursor: pointer;
+    color: #6f4db9;
+    font-size: 4em !important;
+    font-weight: 800 !important;
+    align-self: center;
+}
+
+#nameIcon{
+    position: absolute;
+    top : 20px;
+    transition: 0;
+}
+
+#emailIcon{
+    position: absolute;
+    top : 20px;
+    transition: 0;
+}
+
+#passIcon{
+    position: absolute;
+    top : 20px;
+    transition: 0;
+}
+
+#passConfirmIcon{
+    position: absolute;
+    top : 20px;
+    transition: 0;
+}

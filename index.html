@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Form</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <section>
+      <div id="form">
+        <div id="instructions">
+            <h3 id="instruction">SIGN UP</h3>
+            <h6 id="second-instruction">Fill in all fields :)</h6>
+        </div>
+        <div id="inputs">
+            <div id="welcome-message" class="input">
+                <h4 >done</h4>
+                <div class="welcome-btn" id="button">
+                  <i class="material-icons">done</i>
+                </div>
+            </div>
+            <div id="password-repeat" class="input">
+                <input onfocus='updatePassConfirmIcon()' type="password" placeholder="confirm password">
+                <div class="passwordrepeat-btn" id="button">
+                  <i id="passConfirmIcon" class="material-icons">lock</i>
+                </div>
+            </div>
+            <div id="password" class="input">
+                <input onfocus='updatePassIcon()' type="password" placeholder="password">
+                <div class="pass-btn" id="button">
+                  <i id="passIcon" class="material-icons">lock</i>
+                </div>
+            </div>
+            <div id="email" class="input">
+                <input onfocus='updateEmailIcon()' type="text" placeholder="your email">
+                <div class="email-btn" id="button">
+                  <i id="emailIcon" class="material-icons">mail</i>
+                </div>
+            </div>
+            <div id="name" class="input">
+                <input onfocus='updateNameIcon()' type="text" placeholder="your name">
+                <div class="name-btn" id="button">
+                  <i id="nameIcon" class="material-icons">person</i>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--21:00-->
+      <!-- y2k -->
+    </section>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
