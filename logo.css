@@ -1,0 +1,129 @@
+#logo-section{
+    height: 7em;
+    width: 7em;
+    padding-top: .5em;
+    position:absolute;
+    right: 4em;
+    bottom: 2em;
+}
+
+#container{
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    width:5em;
+    height: 5em;
+    padding: .5em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#owl{
+    position: absolute;
+    top: -1.3em;
+   left: 1.35em;
+}
+
+#square{
+    z-index: 3;
+   position: relative;
+   left: .2em; 
+   top: 18px;
+   height: 2.5em;
+   width: 2.5em;
+   border: .4em solid black;
+   border-left: none;
+   border-top: none;
+   transform: rotate(45deg);
+   transform-origin: center;
+}
+
+#circle{
+    background:linear-gradient(to bottom, aqua 30%,rgb(84, 86, 178)80%);
+    position: relative;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: .4em solid black;
+}
+
+#beak{
+    position:absolute;
+    margin: auto;
+    left: 12px;
+    top: 17px;
+    height: .2em;
+    width: .2em;
+    border: .4em solid black;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+#github,#twitter,#logoemail{
+    /* opacity: 0; */
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    top: 1.6em;
+    left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+}
+
+
+#logoemail{
+    background-color: transparent !important;
+}
+
+
+#logo-section:hover #github{
+    opacity: 1;
+    top: -1.9em;
+    left: -2.5em;
+    transition: .5s;
+    transition-delay: .2s;
+}
+
+#logo-section:hover #twitter{
+    opacity: 1;
+    top: -4.2em;
+    left: 1.45em;
+    transition: .5s;
+    /* transition-delay: .1s; */
+}
+
+ #logo-section:hover #logoemail{
+    opacity: 1;
+    left: 5.4em;
+    top: -1.8em;
+    transition: .5s;
+    transition-delay: .2s;
+}
+
+#logo-section i{
+    font-size: 2em !important;
+    margin-left: .3em;
+}
+
+.fa-github{
+    color: black;
+    margin-left: .5em;
+    margin-top: .3em;
+}
+
+.fa-twitter{
+    color: #26a7de;
+    margin-left: .5em;
+    margin-top: .3em;
+}
+
+.logo-material-icons{
+    color: black;
+    margin-left: .52em;
+    margin-top: .15em;
+}
